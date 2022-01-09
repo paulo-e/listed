@@ -1,10 +1,10 @@
 ---
-title: How to use Slinky description: Slinky is a library for quick development in Spring Boot. date: "2022-01-09"
+title: How to use Slinky
+description: Slinky is a library for quick development in Spring Boot.
+date: "2022-01-09"
 tags:
-
 - Spring Boot
 - Slinky
-
 ---
 
 ## Using slinky's generic classes
