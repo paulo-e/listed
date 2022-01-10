@@ -6,12 +6,11 @@ tags:
 - Spring Boot
 - Slinky
 ---
-
 ## Using slinky's generic classes
 
 The following project is available at [paulo-e/slinky-kotlin-starter](https://github.com/paulo-e/slinky-kotlin-starter).
 
-Having in mind our simple model "`Todo`" bellow, this is how you would go about creating a simple CRUD for this entity.
+Having in mind our simple model "`Todo`" below, this is how you would go about creating a simple CRUD for this entity.
 
 ```kotlin
 @Entity
@@ -50,7 +49,7 @@ class TodoBusiness(repository: TodoRepository)
    : GenericBusiness<Todo, Long>(repository)
 ```
 
-Inside our business (or service) class we receive our repository (again, through dependency injection) and pass it to
+Inside our business (or service) class, we receive our repository (again, through dependency injection) and pass it to
 slinky's `GenericBusiness` class.
 
 ## Controller
@@ -76,7 +75,7 @@ required HTTP verbs to access your resource. Our controller will accept:
 - `GET /api/v1/todos/:id`
     - Retrieves one resource.
 - `GET /api/v1/todos/:id/completed`
-    - In our case, this is going to returns us the value of this Todo's completed status.
+    - In our case, this is going to return us the value of this Todo's completed status.
 - `POST /api/v1/todos`
     - Creates a new resource
 - `PUT /api/v1/todos/:id`
